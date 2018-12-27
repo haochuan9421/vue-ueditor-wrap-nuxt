@@ -187,7 +187,7 @@ export default {
           // 创建 dialog
           var dialog = new window.UE.ui.Dialog({
             // 指定弹出层中页面的路径，这里只能支持页面，路径参考常见问题 2
-            iframeUrl: '/customizeDialogPage.html',
+            iframeUrl: `${process.env.BASE_URL}customizeDialogPage.html`,
             // 需要指定当前的编辑器实例
             editor: editor,
             // 指定 dialog 的名字
